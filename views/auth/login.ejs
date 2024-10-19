@@ -1,0 +1,31 @@
+<% layout("layout/boilerplate")-%>
+<div class="main mx-auto">
+    <h1>AgriTech-Empower</h1>
+    <h3>Enter your login credentials</h3>
+
+    <form action="/login" method="post">
+        <label for="userInput">
+            Username:
+        </label>
+        <input type="text" id="userInput" name="username" type="tel"
+            placeholder="Enter Username" required>
+
+        <label for="password">
+            Password:
+        </label>
+        <input type="password" id="password" name="password" 
+            placeholder="Enter Password" required>
+
+        <div class="wrap">
+            <button id="login">
+                Submit
+            </button>
+        </div>
+    </form>
+    
+    <p>Not registered?
+        <a href="/register" style="text-decoration: none;" >
+            Create an account
+        </a>
+    </p>
+</div>
